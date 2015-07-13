@@ -1,6 +1,6 @@
 # Reproducible Research: Peer Assessment 1
 Berten Van Herp  
-June 13, 2015  
+July 13, 2015  
 ### Loading necessary packages
 Firstly we are going to install the packages we need for this analysis.
 
@@ -8,6 +8,10 @@ Firstly we are going to install the packages we need for this analysis.
 library(dplyr)
 library(ggplot2)
 library(lubridate)
+```
+
+```
+## Warning: package 'lubridate' was built under R version 3.2.1
 ```
 
 
@@ -100,6 +104,10 @@ p <- (ggplot(ADS_DAY,aes(x = Sum_Steps))
     + geom_histogram()
 )
 print(p)
+```
+
+```
+## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
@@ -236,6 +244,10 @@ p <- (ggplot(ADS_IMP_DAY,aes(x = Sum_Steps))
     + geom_histogram()
 )
 print(p)
+```
+
+```
+## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-16-1.png) 
